@@ -44,11 +44,11 @@ body{
     top: 59px;
     background-color: rgb(240, 235, 235);
     display: none;
+    transition: 0.4s;
 }
 
 .inventory ul{  
-    padding-inline-start: 0px;
-    /* border: 1px solid gray; */
+    padding-inline-start: 0px;   
     width: 100%;
     overflow: hidden;
     margin-block-start: 0em;
@@ -58,8 +58,7 @@ body{
     list-style: none;
     width: 100%;
     height: 28px;
-    line-height: 28px;
-    /* border: 1px solid rgb(6, 63, 85); */
+    line-height: 28px;   
     padding-left: 10px;  
  
 }
