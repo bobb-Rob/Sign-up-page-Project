@@ -1,0 +1,70 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+
+#navbar{
+    border: 2px solid green;   
+}
+
+#navbar ul{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    list-style: none;
+}
+
+#navbar li{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(1, 90, 38);
+    min-width: 80px;
+}
+
+#navbar li:hover{
+    background-color: rgb(1, 90, 38);
+    color: aliceblue;
+}
+
+
+.inventory{
+    border: 1px solid rgb(2, 2, 7);
+    width: 180px;
+    position: absolute;
+    left: 413px;
+    top: 59px;
+    background-color: rgb(240, 235, 235);
+    display: none;
+}
+
+.inventory ul{  
+    padding-inline-start: 0px;
+    /* border: 1px solid gray; */
+    width: 100%;
+    overflow: hidden;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+.inventory li{
+    list-style: none;
+    width: 100%;
+    height: 28px;
+    line-height: 28px;
+    /* border: 1px solid rgb(6, 63, 85); */
+    padding-left: 10px;  
+ 
+}
+
+.inventory li:hover{
+    background-color: rgb(1, 90, 38);
+    color: aliceblue;
+}
