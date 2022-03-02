@@ -8,26 +8,76 @@
     <script src="index.js" defer></script>
     <title>Document</title>
 </head>
-<body>
-    <nav id="navbar">
-        <ul>
-            <li>Home</li>
-            <li class="inventory-drop-down" >Inventory</li>
-            <li>Warranty</li>
-            <li>About Us</li>
-        </ul>
-    </nav>
+<body>    
+    <main >
+        <div id="main-signup-page"  >
+            <div id='signup-page-left-image' >
+                <div class="logo-wrap">
+                    <img src="cosmos.svg" alt="logo">
+                </div>
+            </div>             
 
-    <div class="inventory">
-        <ul>
-            <li>Nigerian Used</li>
-            <li>Foreign Used</li>
-            <li>Brand New</li>
-            <li>Custom Made</li>
-            <li>Pimp-my-ride</li>
-        </ul>
-    </div>
-
-
+            <div id="signup-page-form" >
+                <form>
+                    <div class="instruction">
+                        <p>This is not a real online service!. You know you need something like this in 
+                            your life to help you realize your deepest dreams.                         
+                        </p>
+                        <p>Sign up <em>now</em> to get started</p>
+                        <p></p>
+                    </div>
+                    <div class="signup-form-actual">
+                        <p>Let's do this</p>
+                        <div id="name-section">                           
+                            <div>
+                                <label for="first-name">First Name
+                                    <br>
+                                    <input type="text" id="first-name" >
+                                </label>  
+                            </div>
+                            <div>
+                                <label for="last-name">Last Name
+                                    <br>
+                                    <input type="text" id="last-name" >
+                                </label>
+                            </div>
+                        </div>
+                        <div id="email-and-phone-section">
+                            <div>
+                                <label for="email">Email
+                                    <br>
+                                    <input type="email" id="email" >
+                                </label>  
+                            </div>
+                            <div>
+                                <label for="phone">Phone Number
+                                    <br>
+                                    <input type="tel" id="phone" >
+                                </label>
+                            </div>
+                        </div>
+                        <div id="email-and-phone-section">
+                            <div>
+                                <label for="password">Password
+                                    <br>
+                                    <input type="password" id="password" >
+                                </label>  
+                            </div>
+                            <div>
+                                <label for="confirm-password">Confirm Password
+                                    <br>
+                                    <input type="password" id="confirm-password" >
+                                </label>
+                            </div>
+                        </div>
+                        <div class="create-account-btn">
+                           <button type="submit" >Create Account</button>                           
+                        </div>
+                        <p>Already have an account? <a href="http://signin">Log in</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
 </body>
 </html>

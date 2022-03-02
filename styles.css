@@ -1,70 +1,152 @@
 
+:root{
+    --red: #C11E2F;
+    --fadedRed: #F1A9B0;
+    --deepBlue: #031931;
+    --fadedBlue: #64AAF6;
+    --signup-page-background: #141414;
+    --signup-page-contrast-background: #f2f2f3;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=League+Spartan:wght@300;400;500;700;900&display=swap');
+
 body{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
-    position: relative;
 }
 
-
-
-#navbar{
-    border: 2px solid green;   
-}
-
-#navbar ul{
-    /* border: 2px solid red; */
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 40px;
-    list-style: none;
-}
-
-#navbar li{
-    height: 100%;
-    display: flex;
+main{
+    display: flex;   
     justify-content: center;
-    align-items: center;
-    border: 1px solid rgb(1, 90, 38);
-    min-width: 80px;
+    width: 100vw;
+    height: 100vh;
+    background-color:var(--signup-page-background);   
 }
 
-#navbar li:hover{
-    background-color: rgb(1, 90, 38);
-    color: aliceblue;
+#main-signup-page{  
+    width: 70%; 
+    position: relative;
+    display: flex;
+}
+
+#signup-page-left-image,#signup-page-form{
+    background-color: var(--signup-page-contrast-background);
 }
 
 
-.inventory{
-    border: 1px solid rgb(2, 2, 7);
-    width: 180px;
+#signup-page-left-image{
+    width: 40%;
+    height: 100%;
+   background-image: url('beach-and-sea-with-blue-sky1.jpg');
+   background-position: 80%;
+   position: relative;
+}
+
+#signup-page-left-image:after{
+    content: '';
+    width: 100%;   
+    height: 100%;
+    background-color:var(--deepBlue);
     position: absolute;
-    left: 413px;
-    top: 59px;
-    background-color: rgb(240, 235, 235);
-    display: none;
-    transition: 0.4s;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    opacity: 0.3;
+
 }
 
-.inventory ul{  
-    padding-inline-start: 0px;   
-    width: 100%;
-    overflow: hidden;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-}
-.inventory li{
-    list-style: none;
-    width: 100%;
-    height: 28px;
-    line-height: 28px;   
-    padding-left: 10px;  
- 
+#signup-page-form{
+    width: 60%;     
+    padding: 30px;
 }
 
-.inventory li:hover{
-    background-color: rgb(1, 90, 38);
-    color: aliceblue;
+.logo-wrap{
+    position: absolute;    
+    width: 100% ;   
+    z-index: 1000;
+    top: 120px;
+    display: flex;
+    justify-content: center;  
+}
+
+.logo-wrap:before{
+    content: '';
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 140%;
+    top: -10px;
+    opacity: 0.7;  
+}
+
+.logo-wrap > img{
+    z-index: 1000;
+}
+
+#signup-page-form > form{
+   margin-top: 80px;
+   font-family: 'League Spartan', sans-serif;  
+}
+
+form input{
+    width: 80%;
+    margin-bottom: 10px;
+   height: 20px;
+    border: 1px solid var(--signup-page-background);
+    border-radius: 3px;
+    padding: 3px;
+}
+
+#signup-page-form input[type='text']:focus,
+#signup-page-form input[type='password']:focus,
+#signup-page-form input[type='tel']:focus,
+#signup-page-form input[type='email']:focus{
+    outline: 1px solid var(--fadedBlue);
+    border: 1px solid var(--fadedBlue);      
+}
+
+#signup-page-form input[type='email']:invalid,
+#signup-page-form input[type='password']:invalid,
+#signup-page-form input[type='tel']:invalid{
+    outline: 1px solid var(--red);
+    border: 1px solid var(--red);      
+}
+
+#signup-page-form > form label{
+    font-size: 0.8rem;
+}
+
+.instruction,.signup-form-actual p:first-child{
+font-size: 1.1rem;
+font-weight: 700;
+}
+
+.signup-form-actual p:last-child > a{
+    text-decoration: none;
+    color: var(--fadedBlue);
+    font-weight: 700;
+}
+
+.signup-form-actual{
+    margin-top: 50px;    
+}
+
+#name-section,#email-and-phone-section,.create-account-btn{
+    display: flex;
+}
+
+#email-and-phone-section div,#name-section div{
+    flex: 1;
+}
+
+.create-account-btn{
+    margin-top: 30px;
+}
+
+
+.create-account-btn button{
+    padding: 8px;
+    border-radius: 5px;
+    background-color: var(--deepBlue);
+    color: var(--signup-page-contrast-background);
+    border: none;
+    cursor: pointer;
 }
